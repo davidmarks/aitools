@@ -2,15 +2,27 @@
 #
 # Original prompt by David Marks (https://github.com/davidmarks/aitools), MIT License
 
-Read entire convo. Output minimal info for reproducing same answers in a new session:
-1) Key probs & fixes (IssueA→FixA)
-2) Crucial refs/codes/vars (abbr if possible)
+Read entire convo. Then output a detailed CONTEXT_PILL with the essential info for reproducing the same answers in a new session, ensuring it's about 50% more complete than a minimal summary. Include:
+
+1) Key problems & solutions (IssueA→FixA)
+2) References/variables/code (abbreviate if needed)
 3) Lessons/guidelines
-4) Skip irrelevant details
+4) Omit irrelevant details
 5) Problem-Solution Statement (overview + success keys)
-6) Domain expertise (e.g. "Expert Python dev")
-7) Tools used & files needed
+6) Domain expertise required (e.g. "Expert Python dev")
+7) Tools & files needed
+8) Completed steps & next step
 
-Use compression (keywords, reduction, paraphrase, abstraction, extraction, redundancy removal, abbreviations, synonyms, condensation, thematics).
+Use compression (keywords, reduction, paraphrase, abstraction, extractive summarization, remove redundancy, abbreviations, synonyms, condensation, thematics). But ensure you include enough detail to avoid restarting the project from scratch.
 
-Only output code block labeled CONTEXT_PILL, no extra text. Example:
+Output only the code block labeled CONTEXT_PILL, no extra commentary. For example:
+CONTEXT_PILL Prob-Sol: "Implement user creation in Flask (v2) w/ MySQL. Critical success: robust DB schema, error handling, auth checks. Endpoints: /register, /login."
+Issues/Fixes: "SchemaBug→Alter user_tbl to add unique email index AuthErr→Add token-based check in 'auth.py' RaceCond→Employ transactions to ensure consistency"
+Refs/Vars/Code: "model.py→mdlPy, user.py→usrPy user_tbl: id(int pk), email(varchar unique), password_hash(text) config.py for env vars (DB creds, secret keys) 'auth.py' with token logic"
+Tools/Files: "Flask, MySQL, Docker, docker-compose.yml, config.py"
+Lessons: "Minimal field set, robust bcrypt hashing, follow REST best practices, containerize for consistency"
+Completed: "DB schema finalized, migrations done, local tests passed"
+Next: "Deploy to production, final integration tests in staging"
+Expertise: "Expert Python/Flask dev w/ Docker & MySQL knowledge"
+
+
