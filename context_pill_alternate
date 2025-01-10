@@ -1,4 +1,6 @@
 # UNIVERSAL_CONTEXT_PILL_PROMPT
+# Run this prompt at the end of your chat session to create a condensed set of context to pass to a new chat session to continue a project.
+# Created by David Marks (https://github.com/davidmarks/aitools) MIT License
 
 Create ultra-compressed CONTEXT_PILL for AI comprehension across any domain. Use minimal tokens while preserving complete context.
 
