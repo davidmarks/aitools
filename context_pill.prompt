@@ -1,0 +1,16 @@
+# Copy and paste this prompt into the end of your chat session. Copy the output from the LLM into the new chat session to shortcut the process of getting the new context up to speed with minimal tokens.
+#
+# Original prompt by David Marks (https://github.com/davidmarks/aitools), MIT License
+
+Read entire convo. Output minimal info for reproducing same answers in a new session:
+1) Key probs & fixes (IssueA→FixA)
+2) Crucial refs/codes/vars (abbr if possible)
+3) Lessons/guidelines
+4) Skip irrelevant details
+5) Problem-Solution Statement (overview + success keys)
+6) Domain expertise (e.g. "Expert Python dev")
+7) Tools used & files needed
+
+Use compression (keywords, reduction, paraphrase, abstraction, extraction, redundancy removal, abbreviations, synonyms, condensation, thematics).
+
+Only output code block labeled CONTEXT_PILL, no extra text. Example:
