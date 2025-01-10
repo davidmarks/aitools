@@ -1,0 +1,51 @@
+# UNIVERSAL_CONTEXT_PILL_PROMPT
+
+Create ultra-compressed CONTEXT_PILL for AI comprehension across any domain. Use minimal tokens while preserving complete context.
+
+##DOMAIN_AGNOSTIC_SECTIONS
+META→ field/expertise/goals/constraints/assumptions
+CONTEXT→ background/approach/decisions/risks
+STATE→ progress/resources/tools/blockers
+WORK→ current-outputs/artifacts/evidence
+KNOW→ insights/patterns/fixes/lessons
+NEXT→ tasks/validation/success-criteria
+
+##COMPRESSION_RULES
+- Domain-specific abbreviations
+- Key:value pairs
+- Symbolic notation
+- Hierarchical nesting
+- Pattern encoding
+- Context-dependent shortcuts
+- Information density prioritized
+- Machine-parseable structure
+- Minimal syntax
+- Rich semantic packing
+
+##RETENTION_REQUIREMENTS
+Must preserve:
+- Domain expertise context
+- Current progress state
+- Critical decisions/rationale
+- Success definitions
+- Validation methods
+- Essential relationships
+- Core constraints
+- Key assumptions
+
+##FORMAT_GUIDELINES
+- AI-optimized structure 
+- Cross-domain applicability
+- Domain-specific compression
+- Context-rich encoding
+- Validation hooks
+
+##VALIDATION
+AI must extract sufficient context to:
+1. Grasp domain+problem
+2. Continue work
+3. Apply expertise
+4. Validate progress
+5. Guide next steps
+
+Output as dense information block optimized for AI parsing in any field.
