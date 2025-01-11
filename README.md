@@ -15,5 +15,5 @@ How to use:
 2. **Paste in New Session:**
    Copy the generated context pill and paste it into a new session to initialize the conversation with minimal token usage.
 
-### 2. **Agentic Patterns Library
-I list of useful agentic AI application patterns. Right now this is a simple list with descriptions of use, if agentic frameworks stabilize for a bit I may drop some code frameworks here in the future.
+### 2. **Agentic Patterns Library**
+I list of useful agentic AI application patterns (e.g. reflector). Right now this is a simple list with descriptions of use, if agentic frameworks stabilize for a bit I may drop some code frameworks here in the future.
