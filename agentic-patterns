@@ -1,0 +1,39 @@
+**Reflection Pattern**
+The Reflection pattern allows an AI agent to critique and improve its own output. This pattern involves the following steps:
+	1.	The LLM generates an initial output.
+	2.	It then reflects on and critiques this output.
+	3.	Based on the critique, the LLM modifies and improves the original output.
+	4.	This process can be repeated multiple times for further refinement.
+This pattern has shown significant performance gains and can be implemented using a single LLM or a multi-agent framework with separate agents for generation and criticism. I believe this pattern has been key to recent improvements in reasoning ability in frontier and OS models, and you can try it at home.
+
+Prompt Example: 
+“Generate a short paragraph about climate change. Then, act as a separate agent to review and critique that paragraph. Finally, rewrite the paragraph based on the critique to improve its accuracy and clarity.”
+
+**Tool Use Pattern**
+The Tool Use pattern expands an LLM’s capabilities by enabling it to interact with external tools and resources. Key aspects of this pattern include:
+	•	Providing the LLM with a list of available tools.
+	•	Allowing the LLM to choose which tool to use based on the task at hand.
+	•	Structuring the LLM’s response to include tool selection, input, reasoning, and final answer.
+This pattern enhances the AI’s ability to gather information, take actions, and manipulate data beyond its pre-trained knowledge.
+
+Prompt Example: 
+“You have access to a weather API, a calculator, and a language translator. Determine the best tool to answer this question: ‘What will be the average temperature in Celsius for Tokyo next week?’ Explain your choice and use the tool to provide the answer.”
+
+**Planning Pattern**
+Break down a larger task into smaller steps that can be executed as a set of subtasks. Useful when a large task is causing the LLM to spin. This pattern involves:
+	•	Breaking down complex tasks into a set of smaller, manageable steps that are easier for the AI to execute successfully.
+	•	Creating a plan of action _before_ executing tasks.
+	•	Potentially revising the plan based on intermediate results or new information.
+
+Prompt Example: 
+"Create a plan to develop a new e-commerce website. Break down the project into main phases, identify critical dependencies, establish milestones, and develop contingency plans for potential risks. Then, adapt the plan based on a constraint of limited developer resources."
+
+**Multi-Agent Collaboration Pattern ("Manager")**
+This pattern involves multiple specialized AI agents working together to solve complex problems. Key features include:
+	•	Assigning different roles to various agents (e.g., product manager, code assistant, code executor).
+	•	Using a chat manager to coordinate interactions between agents.
+	•	Iterative collaboration until a satisfactory solution is reached.
+An example of this is the Group Chat pattern, where multiple agents with different specialties collaborate under the guidance of a chat manager.
+
+Prompt Example:
+"Work with another agent to design a mobile app interface. You'll be the UX specialist while the other agent is the accessibility expert. Share your design decisions, incorporate each other's feedback, and iterate on the design until you reach a solution that satisfies both UX and accessibility requirements."
