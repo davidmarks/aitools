@@ -17,3 +17,8 @@ How to use:
 
 ### 2. **Agentic Patterns Library**
 I list of useful agentic AI application patterns (e.g. reflector). Right now this is a simple list with descriptions of use, if agentic frameworks stabilize for a bit I may drop some code examples here in the future.
+
+* Reflection pattern
+* Tool use
+* Planning
+* Collaboration
