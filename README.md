@@ -15,6 +15,7 @@ How to use:
 2. **Paste in New Session:**
    Copy the generated context pill and paste it into a new session to initialize the conversation with minimal token usage.
 
+
 ### 2. **Agentic Patterns Library**
 I list of useful agentic AI application patterns (e.g. reflector). Right now this is a simple list with descriptions of use, if agentic frameworks stabilize for a bit I may drop some code examples here in the future.
 
@@ -22,3 +23,7 @@ I list of useful agentic AI application patterns (e.g. reflector). Right now thi
 * Tool use
 * Planning
 * Collaboration
+
+  
+### 3. **talk_notes**
+A prompt that translates raw transcripts to organized notes. Useful for conference sessions, lectures, etc. I typically use this with a speech-to-text model in a pipeline, and modify as needed to customize the output for my current priorities.
