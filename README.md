@@ -27,3 +27,6 @@ I list of useful agentic AI application patterns (e.g. reflector). Right now thi
   
 ### 3. **talk_notes**
 A prompt that translates raw transcripts to organized notes. Useful for conference sessions, lectures, etc. I typically use this with a speech-to-text model in a pipeline, and modify as needed to customize the output for my current priorities.
+
+### 4. **systematic_debugger**
+A prompt that helps to systematically debug software and engineering problems. Based on some research on how to diagnose problems and find root causes. Works surprisingly well.
