@@ -30,3 +30,5 @@ A prompt that translates raw transcripts to organized notes. Useful for conferen
 
 ### 4. **systematic_debugger**
 A prompt that helps to systematically debug software and engineering problems. Based on some research on how to diagnose problems and find root causes. Works surprisingly well.
+
+Note of relevance: Check the date of these tools before using -- things move fast, and some of these tools are likely pretty outdated by now!
